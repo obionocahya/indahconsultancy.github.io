@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat' ,wgh;
+    background-color: #046582;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+}
+header {
+    color:#fff;
+}
+.card {
+    width: 600px;
+    height: 270px;
+    position: relative;/* to set a default position for the back of the card to be in the back  */
+    
+}
+/* .card > .front, .card > .back {
+    height: 200px;
+    padding: 1em 2em;
+} */
+
+header > h1 {
+    font-size: 47px;
+    font-weight: 4;
+    padding-left: 7px;
+}
+header > p {
+    font-size: 15px;
+    font-weight: 3;
+    text-align: start;
+    padding-left: 10px;
+}
+.icon {
+    width: 5%;
+    align-items: start;
+    padding-left: 100px;
+}
+.front {
+    height: 100%;
+    width: 100%;
+    padding: 1em 2em;
+    transform: rotatex(0deg); /*innitial value for the transition */
+    background-color: #c76259;
+    transition-duration: 1s;
+    /* transition-timing-function: cubic-bezier(.175, 0.885, 0.32, 1.275); */
+    transition-timing-function: ease-in-out;
+    box-shadow: 3px 3px 6px rgb(0.198, 0.150, 0.200, 0.5);
+}
+.card:hover > .front {
+    transform: rotateX(180deg);
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    padding: 1em 2em;
+    /* background-size: cover no-repeat; */
+    background-color: rgb(255, 233, 233);
+    transform: rotateX(-180deg); /*innitial value for the transition */
+    
+    position: absolute;
+    /* positioning the back of the card on top of the front by giving the top and left value 0*/
+    top: 0;
+    left: 0;
+    /* making the back of the card invissible by the dafault*/
+    opacity: 0;
+    transition-duration: 1s;
+    /* transition-timing-function: cubic-bezier(.175, 0.885, 0.32, 1.275); */
+    transition-timing-function: ease-in-out;
+    box-shadow: 3px 3px 6px rgb(0.198, 0.150, 0.200, 0.5);
+}
+.card:hover > .back {
+    transform: rotateX(0deg);
+    opacity: 1;
+}
