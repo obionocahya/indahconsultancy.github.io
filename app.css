@@ -90,3 +90,8 @@ footer {
     text-align: center;
     color: rgb(252, 236, 212);
 }
+@media (max-width: 600px) {
+    .front p {
+        opacity: 0;
+    }
+}
