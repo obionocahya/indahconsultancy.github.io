@@ -54,6 +54,7 @@ header > p {
 }
 .card:hover > .front {
     transform: rotateX(180deg);
+    opacity: 0;
 }
 
 .back {
