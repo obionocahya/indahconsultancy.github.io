@@ -45,7 +45,7 @@ header > p {
     height: 100%;
     width: 100%;
     padding: 1em 2em;
-    transform: rotatex(0deg); /*innitial value for the transition */
+    transform: rotateX(0deg); /*innitial value for the transition */
     background-color: #c76259;
     transition-duration: 1s;
     /* transition-timing-function: cubic-bezier(.175, 0.885, 0.32, 1.275); */
@@ -78,4 +78,14 @@ header > p {
 .card:hover > .back {
     transform: rotateX(0deg);
     opacity: 1;
+}
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 20px;
+    text-align: center;
+    color: rgb(252, 236, 212);
 }
